@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham-book.woff2");
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham-bold.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham-black.woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham-light.woff2");
+  font-weight: 300;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
