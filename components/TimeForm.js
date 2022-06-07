@@ -2,9 +2,8 @@ export default function TimeForm({ search, results }) {
   function handleForm(event) {
     event.preventDefault();
     const form = event.target;
-    if (form.address.value.length > 1) {
-      search(form);
-    }
+    if (form.period.value === "") return;
+    search(form);
   }
 
   return (
@@ -63,8 +62,9 @@ export default function TimeForm({ search, results }) {
           className="w-full border-2 rounded my-2 p-4 outline-none focus:border-sf-yellow transition duration-300"
           placeholder="Insira aqui um endereço..."
           name="address"
+          hidden
         />
-        <div className="flex flex-col sm:flex-row justify-between">
+        <div className="flex flex-col sm:flex-row justify-between mt-6">
           <span>
             <input
               type="checkbox"

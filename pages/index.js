@@ -1,36 +1,18 @@
 import { useState, useRef } from "react";
 
-import TimeForm from "@/TimeForm";
-import SearchLegend from "@/SearchLegend";
-import SearchResults from "@/SearchResults";
+import TimeForm from "components/TimeForm";
+import SearchLegend from "components/SearchLegend";
+import SearchResults from "components/SearchResults";
+import getAvailableLocations from "components/getAvailableLocations";
 
 export default function Home() {
   const refResults = useRef(null);
   const [results, setResults] = useState(-1);
-
   async function search(form) {
-    const period = form.period.value;
-    const showClosed = form.showClosed.checked;
-    const address = form.address.value.toLowerCase();
-
-    let queryRes = [];
-    const response = await fetch("/location.json");
-    const data = await response.json();
-    const locations = data.locations;
-    locations.map((item) => {
-      const location = item?.content?.toLowerCase() || null;
-      const title = item?.title?.toLowerCase() || null;
-      const opened = item.opened;
-      if (!location?.includes(address) && !title?.includes(address)) return;
-      if (showClosed || opened) queryRes.push(item);
-    });
-
-    //Essa função coloca os lugares fechados por último
-    if (showClosed) {
-      queryRes.sort((a, b) => b.opened - a.opened);
-    }
-    setResults(queryRes);
-    refResults.current.scrollIntoView();
+    setResults(await getAvailableLocations(form));
+    setTimeout(() => {
+      refResults.current.scrollIntoView();
+    }, 200);
   }
 
   return (

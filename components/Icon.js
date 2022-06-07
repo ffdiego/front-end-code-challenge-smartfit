@@ -13,7 +13,10 @@ export default function Icon({ name, status, text }) {
 
   return (
     <div className="flex flex-col items-center w-24">
-      <img src={`/images/${getStatus(status)}-${name}.png`} className="h-16" />
+      <img
+        src={`/images/${getStatus(status)}-${name}.png`}
+        className="max-h-16"
+      />
       <p className="text-sm">{text}</p>
     </div>
   );
