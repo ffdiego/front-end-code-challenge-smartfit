@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main page structure Should render correctly 1`] = `
+<div>
+  <div
+    class="bg-black flex justify-center p-6"
+  >
+    <img
+      alt="logo"
+      class="h-12"
+      src="/images/logo.svg"
+    />
+  </div>
+  <div
+    class="mx-auto max-w-4xl"
+  >
+    <div
+      class="mx-3"
+    >
+      <h1
+        class="font-gotham font-black text-4xl mt-8 mb-4"
+      >
+        REABERTURA
+        <br />
+         SMART FIT
+      </h1>
+      <div
+        class="bg-black h-2 w-20 ml-2 mb-6"
+      />
+      <p
+        class="font-gotham font-light"
+      >
+        O horário de funcionamento das nossas unidades está seguindo os decretos de cada município. Por isso, confira aqui se a sua unidade está aberta e as medidas de segurança que estamos seguindo.
+      </p>
+    </div>
+    <div
+      class="my-4 border-4 rounded border-sf-light-grey p-4 font-gotham text-sf-dark-grey"
+    >
+      <p
+        class="font-gotham mb-3"
+      >
+        <img
+          class="inline h-6 mr-2"
+          src="/images/icon-hour.png"
+        />
+        Horário
+      </p>
+      <p
+        class="border-b-2 text-lg mb-3"
+      >
+        Qual período quer treinar?
+      </p>
+      <form>
+        <table
+          class="table-auto w-full"
+        >
+          <tbody>
+            <tr
+              class="border-b"
+            >
+              <td>
+                <input
+                  class="mr-2 my-3"
+                  id="manha"
+                  name="period"
+                  type="radio"
+                  value="manha"
+                />
+                <label
+                  for="manha"
+                >
+                  Manhã
+                </label>
+              </td>
+              <td
+                class="text-right"
+              >
+                06:00 às 12:00
+              </td>
+            </tr>
+            <tr
+              class="border-b"
+            >
+              <td>
+                <input
+                  class="mr-2 my-3"
+                  id="tarde"
+                  name="period"
+                  type="radio"
+                  value="tarde"
+                />
+                <label
+                  for="tarde"
+                >
+                  Tarde
+                </label>
+              </td>
+              <td
+                class="text-right"
+              >
+                12:01 às 18:00
+              </td>
+            </tr>
+            <tr
+              class="border-b"
+            >
+              <td>
+                <input
+                  class="mr-2 my-3"
+                  id="noite"
+                  name="period"
+                  type="radio"
+                  value="noite"
+                />
+                <label
+                  for="noite"
+                >
+                  Noite
+                </label>
+              </td>
+              <td
+                class="text-right"
+              >
+                18:01 às 23:00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <input
+          class="w-full border-2 rounded my-2 p-4 outline-none focus:border-sf-yellow transition duration-300"
+          hidden=""
+          name="address"
+          placeholder="Insira aqui um endereço..."
+        />
+        <div
+          class="flex flex-col sm:flex-row justify-between mt-6"
+        >
+          <span>
+            <input
+              class="mr-2 mt-3"
+              id="showClosed"
+              name="showClosed"
+              type="checkbox"
+            />
+            <label
+              for="showClosed"
+            >
+              Exibir unidades fechadas
+            </label>
+          </span>
+          <p>
+            Resultados encontrados: 
+            <b>
+              0
+            </b>
+          </p>
+        </div>
+        <div
+          class="flex justify-evenly"
+        >
+          <button
+            class="w-64 border-2 border-sf-yellow bg-sf-yellow text-black font-gotham font-bold py-2 px-4 rounded mt-4"
+          >
+            ENCONTRAR UNIDADE
+          </button>
+          <input
+            class="w-64 border-2 border-sf-light-grey text-black font-gotham font-bold py-2 px-4 rounded mt-4 cursor-pointer"
+            type="reset"
+            value="LIMPAR"
+          />
+        </div>
+      </form>
+    </div>
+    <div
+      class="bg-sf-light-grey flex flex-wrap lg:flex-nowrap justify-evenly font-gotham my-6 mx-6 md:mx-0 p-6"
+    >
+      <div>
+        <p
+          class="text-center font-bold"
+        >
+          Máscara
+        </p>
+        <div
+          class="flex"
+        >
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/required-mask.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Obrigatório
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/recommended-mask.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Recomendado
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p
+          class="text-center font-bold"
+        >
+          Toalha
+        </p>
+        <div
+          class="flex"
+        >
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/required-towel.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Obrigatório
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/recommended-towel.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Recomendado
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p
+          class="text-center font-bold"
+        >
+          Bebedouro
+        </p>
+        <div
+          class="flex"
+        >
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/partial-fountain.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Parcial
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/forbidden-fountain.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Probido
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p
+          class="text-center font-bold"
+        >
+          Vestiários
+        </p>
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/required-lockerroom.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Liberado
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/partial-lockerroom.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Parcial
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center w-24"
+          >
+            <img
+              class="max-h-16"
+              src="/images/forbidden-lockerroom.png"
+            />
+            <p
+              class="text-sm"
+            >
+              Fechado
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div />
+  </div>
+  <div
+    class="bg-sf-dark-grey flex flex-col justify-center mt-6 p-10 pb-20"
+  >
+    <img
+      alt="logo"
+      class="h-10"
+      src="/images/logo.svg"
+    />
+    <p
+      class="mt-2 font-gotham text-center text-white"
+    >
+      Todos os direitos reservados - 2020
+    </p>
+  </div>
+</div>
+`;
